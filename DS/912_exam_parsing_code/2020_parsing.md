@@ -14,7 +14,7 @@
 int LSize(int n){
     int h = log(n)/ log(2);
     int b = pow(2, h);
-    int a = min(n - b,b / 2);
+    int a = min(n - b + 1,b / 2);
     return Lsize = b / 2 - 1  + a;
 }
 ```
