@@ -15,7 +15,7 @@ int LSize(int n){
     int h = log(n)/ log(2);
     int b = pow(2, h);
     int a = min(n - b,b / 2);
-    return Lsize = b / 2 - 1  + a;
+    return Lsize = b / 2 - 1  + a;//根节点记为左子树中
 }
 ```
 
