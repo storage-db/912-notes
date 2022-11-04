@@ -14,13 +14,8 @@
 int LSize(int n){
     int h = log(n)/ log(2);
     int b = pow(2, h);
-<<<<<<< HEAD
-    int a = min(n - b,b / 2);
-    return Lsize = b / 2 - 1  + a;//根节点记为左子树中
-=======
     int a = min(n - b + 1,b / 2);
     return Lsize = b / 2 - 1  + a;
->>>>>>> 9cab3d92dba5eab83fa2bdf451e9e3db9581b7c2
 }
 ```
 
@@ -58,7 +53,7 @@ void splayTo(BinNodePosi*(T) a,BinNodePosi*(T) x){
 # 5
 ```c++
 BinNodePosi*(T) toCBT(BinNodePosi*(T) root){
-    if(!root) return NULL;//空树直接返回
+    if(!root) return NU  LL;//空树直接返回
     if(!root->lc&&!root->rc) return root;//仅有根节点
     int Lsize = Lsize(root->size);
     BinNodePosi*(T) newRoot = searchK(root,Lsize+1);//寻找完全二叉树根节点
